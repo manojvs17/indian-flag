@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background:linear-gradient(rgb(100, 100, 104),rgb(30, 159, 182),rgba(124,132,44,1));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flagouter{
+    cursor: grab;
+    height: 300px;
+    width: 600px;
+    background-color: black;
+    color: black;
+    position: absolute;
+    border: 15px solid black;
+    border-radius: 20px;
+}
+.chakra{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    position: absolute;
+    top: 33.3%;
+    left: 40%;
+    background-color:white;
+    border: 8px solid #06038D;
+}
+.box1,.box2,.box3{
+    height: 100px;
+}
+.box1{background-color:#FF671F;}
+.box2{background-color:#FFFFFF;}
+.box3{background-color:#046A38;}
+
+.chakraline{
+    top:48%;
+    left: 3%;
+    height: 3px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #06038D;
+    position:absolute;
+    transform: rotate(var(--d));
+}
+.chakra{
+    animation: rotate 8s infinite none;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
